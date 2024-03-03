@@ -2,11 +2,12 @@ import { StyleSheet, SafeAreaView } from "react-native";
 
 import { WebView } from "react-native-webview";
 
+const WEB_URI = "https://www.nalab.me/";
+
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <WebView source={{ uri: "https://www.nalab.me/" }} />
-      {/* userAgent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" */}
+      <WebView source={{ uri: WEB_URI }} />
     </SafeAreaView>
   );
 }
@@ -14,6 +15,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D1E3F8'
+    backgroundColor: "#D1E3F8",
   },
 });
